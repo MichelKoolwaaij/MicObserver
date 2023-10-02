@@ -4,27 +4,27 @@ public class App {
 	public static void main(String[] args) {
 		// Init all observables
 		TwitterUser michel = new Teacher("Michel");
-		TwitterUser joost = new Teacher("Joost");
-		TwitterUser mark = new Teacher("Mark");
+		TwitterUser rody = new Teacher("Rody");
+		TwitterUser tineke = new Teacher("Tineke");
 
 		// Init all observers
-		IFollower luuk = new Student("Luuk");
-		IFollower marco = new Teacher("Marco");
-		IFollower barbara = new Student("Barbara");
-		IFollower ingrid = new Student("Ingrid");
+		IFollower aron = new Student("Aron");
+		IFollower richard = new Teacher("Richard");
+		IFollower wouter = new Student("Wouter");
+		IFollower lieke = new Student("Lieke");
 
 		// Add observers to observables
-		michel.addFollower(luuk);
-		joost.addFollower(luuk);
-		joost.addFollower(marco);
-		joost.addFollower(barbara);
-		mark.addFollower(barbara);
-		mark.addFollower(ingrid);
+		michel.addFollower(aron);
+		rody.addFollower(aron);
+		rody.addFollower(richard);
+		rody.addFollower(wouter);
+		tineke.addFollower(wouter);
+		tineke.addFollower(lieke);
 
 		// observe
-		michel.tweet("Vandaag mag ik bij OOAD eindelijk IntelliJ gebruiken!");
-		joost.tweet("Op enig moment in tijd");
-		mark.tweet("De voorbeelden op pluralsight zijn beter");
+		michel.tweet("Laten we nog een deployment diagram doen");
+		rody.tweet("Ik ben er weer!!!");
+		tineke.tweet("Waar is je DROP model?");
 		
 	}
 }
