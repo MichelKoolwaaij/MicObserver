@@ -11,7 +11,8 @@ public class Teacher extends TwitterUser implements IFollower {
 
 
     public void update(TwitterUser user, String tweet) {
-        lastTweet = "("+this.id+") - @" + user.getId() + " tweets: " + tweet;
+        lastTweet = "("+this.id+") - Collega @" + user.getId() + " tweets: " + tweet;
+        System.out.println(lastTweet);
     }
 
     public String getLastTweet(){
